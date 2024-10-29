@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #666;
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+footer img {
+      width: 200px;
+    vertical-align: middle;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+footer p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+main {
+  min-height: 80dvh;
+}
+footer,
+nav.navbar {
+  height: 10vh;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Tworzy elastyczną siatkę */
+  gap: 20px;
+}
+.name-profile {
+  background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.container-people {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.name-profile {
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  padding: 15px; 
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+}
+
+.name-profile:hover {
+  transform: scale(1.01); 
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
